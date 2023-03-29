@@ -390,3 +390,7 @@ myFunk(fun=()=>{
  
  worker1.show("Manikgong")
  worker2.show("Borishal")
+ 
+ 
+ 
+console.log(new Date)
