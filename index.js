@@ -1,6 +1,6 @@
 
 // same value add 
-
+/***
 
 let sum1 = parseInt(prompt("Enter First Number "))
 let sum2 = parseInt(prompt("Enter Secomd Number "))
@@ -309,3 +309,21 @@ const playInfo = [
 	
 	const t = higherScorePlayername(playInfo)
 	console.log(t)
+***/
+
+
+function myFunk(callback){
+	console.log("myFunk")
+	callback()
+}
+
+
+
+
+myFunk(fun=()=>{
+	console.log("This is call back function")
+})
+
+ 
+ 
+ 
