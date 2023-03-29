@@ -312,6 +312,11 @@ const playInfo = [
 ***/
 
 
+// create a callback function
+
+
+
+
 function myFunk(callback){
 	console.log("myFunk")
 	callback()
@@ -326,4 +331,62 @@ myFunk(fun=()=>{
 
  
  
+ // object make by  constactor , function
  
+ 
+ 
+ function Student(name, age, lang, nationality="Bangladeshi"){
+ 	 this.name=name;
+ 	 this.age=age;
+ 	 this.lang=lang;
+ 	 this.nationality=nationality
+ 	 
+ 	 this.display= function(){
+ 	 	console.log(this.name)
+ 	 	console.log(this.age)
+ 	 	console.log(this.lang)
+ 	 	console.log(this.nationality)
+ 	 }
+ 	 
+ }
+ 
+ 
+ let student1 = new Student("Tawhid", 02, "Bangla")
+ let student2 = new Student("Atiqur", 33, "Bangla")
+ let student3 = new Student("Doly", 28, "Bangla")
+ 
+ //student1.display()
+ //student2.display()
+ //student3.display()
+ 
+ 
+ // this object creation by Error function
+ 
+ 
+ function Worker(name, id, unit, position, nationality="Bangladeshi"){
+ 	  this.name = name;
+ 	  this.id=id;
+ 	  this.unit=unit;
+ 	  this.position=position;
+ 	  this.nationality=nationality;
+ 	  
+ 	  
+ 	  
+ 	  this.show=(home)=>{
+ 	  	console.log(this.name)
+ 	  	console.log(this.id)
+ 	  	console.log(this.unit)
+ 	  	console.log(this.position)
+ 	  	console.log(home)
+ 	  	console.log(this.nationality)
+ 	  }
+ 	  
+ }
+ 
+ 
+ const worker1 = new Worker("Nurjahan Akter", 36353, "unit-3", "operator")
+ const worker2 = new Worker("Helan khatun", 27536, "unit-2", "helpar")
+ const worker3 = new Worker("Shanja Khatun", 17373, "unit-1", "quantity inspector")
+ 
+ worker1.show("Manikgong")
+ worker2.show("Borishal")
